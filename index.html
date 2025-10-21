@@ -201,19 +201,19 @@
                 { 
                     name: 'SECURITY SENSORS', 
                     sensorTitle: "Guard Patrols",
-                    instructions: 'Disable/Bypass as many of the zone sensors as possible. This should make individual codes easier to obtain. To do this you’ll need to cut the power and then connect the right jumpers on each zone panel to disable the sensor for that zone. <br/><br/>The sensor power switch is in the locked security panel near the breakers. Find a key to that panel so you can cut the power to place your jumpers. ONLY apply jumpers when power is cut. You should be able to cut the power for up to 30 seconds at a time without drawing the guards’ attention<br/><br/><b>Be sure to put everything you use back where you found it so the guards don\'t catch on!</b><br/><br/>', 
+                    instructions: '<p>The APOSTLE SECURITY Zonal Control Interface (ZCI) is the foundational element for comprehensive, multi-zone security management. Designed for adaptability and seamless integration, the ZCI provides a clear, localized interface for controlling and receiving feedback from a wide array of Apostle Security devices within any designated area (e.g., "ZONE 1"). Its robust design and universal communication protocols ensure it acts as the perfect localized command center, whether for high-security access points or complex, interactive security simulations.</p><br/><em>Disable/Bypass as many of the zone sensors as possible. This should make individual codes easier to obtain. To do this you’ll need to cut the power and then connect the right jumpers on each zone panel to disable the sensor for that zone. <br/><br/>The sensor power switch is in the locked security panel near the breakers. Find a key to that panel so you can cut the power to place your jumpers. <strong>ONLY apply jumpers when power is cut</strong>. You should be able to cut the power for up to 30 seconds at a time without drawing the guard’s attention<br/></em><br/><strong>Be sure to put everything you use back where you found it so the guards don\'t catch on!</strong><br/><br/>', 
                     challengeNote: 'Listen for the guard as he may return to the station at any time.', 
                     status: 'active', 
                     userCode: '', 
                     correctCode: null, // This zone no longer has a code to collect
                     verified: false,
-                    encryptedIntel: 'Intel suggests Drin frequently sets his keys down when washing up.'
+                    encryptedIntel: '<ul style="list-style:inside;"><li>Joseph loses his keys so often, the other guards attached a key finder fob to them.</li><li>Remember you want to ensure all panel indicators turn <span style="color:green; font-weight:bold;">GREEN</span></li></ul>'
                 },
                 { 
                     name: 'ZONE 1', 
                     sensorTitle: 'Maglock Array',
-                    instructions: 'The laser-based CE-730 Environmental Monitor is designed to detect weapons as people enter the door. When the sensor is active magnets or metal crossing the detection zone trigger an alarm to the guards.<br/><br/>There is a panel at the base that houses the zone-code, but we will not have the password to expose it, so the <em>Line Technician</em> will need to open the panel manually', 
-                    challengeNote: 'Electro-magnetic detection active.', 
+                    instructions: '<p style="margin-top: 12pt; margin-bottom: 12pt;"><span>The Apostle Security CE-730 Environmental Monitor is a </span><strong><span>state-of-the-art perimeter defense system</span></strong><span> engineered for the most demanding environments, including critical infrastructure, high-value asset storage, and restricted data centers. It utilizes</span><strong><span> proprietary multi-spectrum sensing technology</span></strong><span> to continuously analyze the atmospheric integrity of its operational zone. This advanced capability provides </span><strong><span>unparalleled situational awareness</span></strong><span>, precisely detecting unauthorized presence, tracking subtle environmental shifts, and identifying electronic tampering attempts in real-time.</span></p><p><em>You will need to manually retrieve the code without triggering the alarm.</em><p>', 
+                    challengeNote: 'Electro-magnetic detection active. Magnetic or Metalic devices will trigger alarm.', 
                     status: 'active', 
                     userCode: '', 
                     correctCode: '1234', // Updated to a 4-digit code
@@ -223,79 +223,79 @@
                 { 
                     name: 'ZONE 2', 
                     sensorTitle: 'Electrostat',
-                    instructions: 'TBD', 
+                    instructions: '<p style="margin-top: 12pt; margin-bottom: 12pt;">The <strong>Keyed Cipher Panel (KCP)</strong> is the industry-leading solution for conditional access to encrypted data streams. Designed for high-security environments, the KCP ensures the integrity of the final access token by requiring mandatory physical validation. It operates as a passive, non-electric terminal that provides visual output only upon successful, authorized mechanical input.</p><p style="margin-top: 12pt; margin-bottom: 12pt;"><em>You will need to decrypt the message to retrieve the token code</em></p>', 
                     challengeNote: 'The Electrostat is active, USB decryption devices will be destroyed', 
                     status: 'active', 
                     userCode: '', 
                     correctCode: 'JOHN', 
                     verified: false, 
-                    encryptedIntel: 'Hint goes here' 
+                    encryptedIntel: 'The Cryptographer has the skills and tools to decipher the text. <em><strong>Do NOT</strong> use the USB Decryption Dongle unless the Electrostat has been bypassed' 
                 },
                 { 
                     name: 'ZONE 3', 
-                    sensorTitle: 'Gyroscopic Cipher',
-                    instructions: 'The research lab is sealed by a high-frequency sonic lock. Adjust the sonic emitter to the correct frequency to bypass the lock. The frequency is written on a whiteboard, but it\'s in a foreign language. The code is the numbers in the equation.', 
-                    challengeNote: 'The numbers are written in Latin. Look for the translation guide.', 
+                    sensorTitle: 'Gyroscopic Limiter',
+                    instructions: '<p style="margin-top: 12pt; margin-bottom: 12pt;"><span>The </span><strong><span">Cipher-Array Console</span></strong><span"> is a ruggedized, field-deployable security interface engineered for high-stakes system decryption. It is designed to facilitate the rapid disengagement of four sequential security protocols, represented by the console&rsquo;s distinct </span><strong><em><span>Sentinel Array. </span></strong></p><p><em><span>The Gyro-Stabilizer must disable each array element using your single-use decryption cores</span></em></p>', 
+                    challengeNote: 'The Limiter is active, you can NOT user your D100', 
                     status: 'active', 
                     userCode: '', 
-                    correctCode: '6483', 
+                    correctCode: '0832', 
                     verified: false, 
-                    encryptedIntel: 'A forgotten tablet on a lab bench has an app that translates various languages, including Latin, into numbers and symbols. The app is named "Omni-Translate."' 
+                    encryptedIntel: '<p><strong>Procedure</strong></p><ol style="list-style:inside;"><li>Disable the sentinels in order, from left to right</li><li>For each Sentinel, you must use the specified dice.</li><li>The roll is final. There are no re-rolls.</li><li>After each roll, the dice used are permanently removed from your pool.</li><li><b>IF Gyroscoping Limiter is disabled</b>, You can add the d100 to any single roll you choose. Once used, it is also removed from the game.</li></ol><p><br/><br/></p>' 
                 },
                 { 
                     name: 'ZONE 4', 
-                    sensorTitle: 'Pressure Plates',
-                    instructions: 'The communications hub is encrypted. To bypass the encryption, you must solve a puzzle involving a series of colored lights. The correct sequence is hidden in the manual. Find the code on the page with the sticky note.', 
-                    challengeNote: 'The sticky note is on page 42.', 
+                    sensorTitle: 'Tactile Sensors',
+                    instructions: '<p style="margin-top: 12pt; margin-bottom: 12pt;"><span>The Integrity Field Monitor is a next-generation perimeter defense system designed for the most critical data and asset protection scenarios. Engineered for environments where physical contact is a liability, the IFM creates an impenetrable, multi-layered security envelope around sensitive zones. Its primary function is to continuously verify the integrity of the protected area, detecting any unauthorized intrusion or manipulation.&nbsp;</span><span>When direct intervention is required&mdash;such as a system override or urgent data retrieval&mdash;the IFM necessitates a highly precise, </span><strong><span>zero-contact protocol</span></strong><span> to prevent triggering its advanced countermeasures.</span></p><p><em>The Remote Actuator(s) will need to retrieve the code from behind the secure locks without tripping the laser sensors.', 
+                    challengeNote: 'Touching the pressure plates surrounding the laser grid will result in an alarm', 
                     status: 'active', 
                     userCode: '', 
-                    correctCode: '5914', // Updated to a 4-digit code
+                    correctCode: 'LUKE', // Updated to a 4-digit code
                     verified: false, 
-                    encryptedIntel: 'A technician\'s note taped to the inside of a drawer mentions "The blue light always follows the green. The yellow light always comes first."' 
+                    encryptedIntel: 'The token code is protected by padlocks sequenced in rainbow order. Use the Pico Grip Actuators to remove the locks and reveal the digits' 
                 },
                 { 
                     name: 'ZONE 5', 
-                    sensorTitle: 'Circuit Diverter',
-                    instructions: 'The data center\'s network is a tangled mess of cables. Trace the cables through the panel.', 
-                    challengeNote: 'Analysis shows the <color> circuits are currently active', 
+                    sensorTitle: 'Adaptive Matrix',
+                    instructions: '<p style="margin-top: 12pt; margin-bottom: 12pt;">The Dynamic Neural Interconnect (DNI) is a revolutionary self-regulating module designed to provide secure, adaptive, and redundant signal routing within critical infrastructure and high-value asset protection systems. Unlike static junction boxes, the DNI features an actively reconfigurable network that dynamically shifts primary and auxiliary signal paths, mitigating vulnerabilities and enhancing system resilience against intrusion and failure.</p><p><em>The Circuit Engineer will need to trace the approriate wires to reveal the token code.', 
+                    challengeNote: 'Analysis shows the RED circuits are currently active', 
                     status: 'active', 
                     userCode: '', 
-                    correctCode: '4563', 
+                    correctCode: '6741', 
                     verified: false, 
-                    encryptedIntel: 'TBD' 
+                    encryptedIntel: 'Use the Line Tracer Stylus to follow the live circuits, based on the state of the Adaptive Matrix. Follow the wires that match the zone state color (Green or Red)' 
                 },
                 { 
                     name: 'ZONE 6', 
                     sensorTitle: 'Biometric Cleaner',
-                    instructions: 'The armory is protected by a biometric scanner that requires a numerical key. Find the key by matching the fingerprints on the scanner to the pictures on the wall. The code is on the back of the picture that matches the fingerprint.', 
-                    challengeNote: 'The fingerprint is smudged. You might need to use a special powder to see the full print.', 
+                    instructions: '<p style="margin-top: 12pt; margin-bottom: 12pt;"><span>The </span><strong><span>Trace Analyzer (BTA-500)</span></strong><span> boasts a </span><strong><span>Wall-Mount Ready Design</span></strong><span> with a sleek, low-profile form factor for seamless installation. It utilizes a </span><strong><span>High-Resolution Optical 1200 DPI</span></strong><span> sensor for multi-spectral skin and chemical analysis. Equipped with </span><strong><span>Indige-Spectra&trade; Imaging</span></strong><span> and </span><strong><span>IntelliScan&trade;: UV-Replication Pin and Covariants</span></strong><span>, the BTA-500 guarantees forensic-grade data capture. For integration, the unit supports both </span><strong><span>Network &amp; USB</span></strong><span> connectivity.</span></p><p><em>The Forensic Examiner should apply the proper trace sheet and the team should find and match the prints to reveal the token code', 
+                    challengeNote: 'You will need to use the High-yield Forensic trace sheet', 
                     status: 'active', 
                     userCode: '', 
-                    correctCode: '1084', 
+                    correctCode: 'MARK', 
                     verified: false, 
-                    encryptedIntel: 'A security guard\'s discarded glove has a trace of a special powder used for dusting for fingerprints. The brand name is "Bio-Reveal."' 
+                    encryptedIntel: 'Search for fingerprint cards and match them up to the prints revealed by the trace sheet on the scanner. Use the High Yield sheet if the zone is red and the Standard sheet if it is green.' 
                 },
                 // --- New zones added below ---
                 { 
                     name: 'ZONE 7', 
-                    sensorTitle: 'Data Node',
-                    instructions: 'The core data node is protected by a complex signal path. Trace the correct path from the schematic to find the sequence of numbers. The code is the three-digit number at the end of the path.', 
-                    challengeNote: 'The schematic has a broken wire. You will have to use the wire to jump the path. The correct path glows when you trace it.', 
-                    status: 'disabled', 
+                    sensorTitle: '',
+                    instructions: 'This sensor has not yet been setup. Once the sensor is installed and the token code is linked with the Zone Control Interface it will become active.', 
+                    challengeNote: '', 
+                    status: 'unset', 
                     userCode: '', 
-                    correctCode: '2710', // Updated to a 4-digit code
+                    correctCode: '1411', // Updated to a 4-digit code
                     verified: false, 
-                    encryptedIntel: 'A faded blueprint in a drawer shows a key to the node schematic. The blueprint states: "The primary signal path is always red."' 
+                    encryptedIntel: 'See the Zone Control Interface for the token code to sync upon setup' 
                 },
                 { 
                     name: 'ZONE 8', 
-                    instructions: 'The vault door is sealed by a high-voltage circuitry lock. You must complete the circuit by placing the correct circuit chips in the right order. The code is the color of the final chip.', 
-                    challengeNote: 'The chip colors must be in alphabetical order.', 
-                    status: 'disabled', 
+                    instructions: 'This sensor has not yet been setup. Once the sensor is installed and the token code is linked with the Zone Control Interface it will become active.', 
+                    challengeNote: '', 
+                    status: 'unset', 
                     userCode: '', 
-                    correctCode: '8139', // Updated to a 4-digit code
+                    correctCode: 'MARY', // Updated to a 4-digit code
                     verified: false, 
-                    encryptedIntel: 'A loose piece of paper on the floor says: "The first chip must be the same color as the vault door."' 
+                    encryptedIntel: 'See the Zone Control Interface for the token code to sync upon setup. If the ZCI isn\'t initialized, perhaps there is an install schedule somewhere.' 
                 }
             ];
 
@@ -378,7 +378,10 @@
                     zoneItem.dataset.status = zone.status;
 
                     // Determine circle color based on initial status
-                    const circleColorClass = zone.status === 'active' ? 'text-red-500' : 'text-green-500';
+                    var circleColorClass = zone.status === 'active' ? 'text-red-500' : 'text-green-500';
+                    if(zone.status === 'unset'){
+                        circleColorClass = 'text-yellow-500';
+                    }
                     const nameColorClass = zone.verified ? 'text-green-500' : 'text-gray-300';
 
                     zoneItem.innerHTML = `
@@ -462,7 +465,7 @@
                 const toggleStatusAction = target.closest('[data-action="toggle-status"]');
                 if (toggleStatusAction) {
                     // Only toggle for non-overview zones
-                    if (index !== 0) {
+                    if (index !== 0 && zones[index].status != 'unset') {
                         const currentStatus = zones[index].status;
                         const newStatus = currentStatus === 'active' ? 'complete' : 'active';
                         zones[index].status = newStatus;
@@ -756,6 +759,8 @@
                         challengeNoteText.textContent = selectedZone.challengeNote;
                     }
                     sensorActiveNote.classList.remove('hidden');
+                } else if (selectedZone.status == 'unset') {
+                    //null
                 } else {
                     sensorDisabledNote.classList.remove('hidden');
                 }
@@ -967,4 +972,3 @@
     </script>
 </body>
 </html>
-
